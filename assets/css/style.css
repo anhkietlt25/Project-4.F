@@ -385,3 +385,46 @@ a {
     line-height: 1.75; /* 175% */
     color: #2E80CE;
 }
+
+/* Feature */
+.feature {
+    margin-top: 85px;
+    padding: 85px 0;
+}
+
+.feature__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.feature__media {
+    width: 48%;
+}
+
+.feature__images {
+    position: relative;
+    padding: 0 58px 121px 0;
+}
+
+.feature__img {
+    width: 512px;
+    height: 370px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.feature__img:last-child {
+    width: 332px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.feature__content {
+    width: 40%;
+}
+
+.feature__cta {
+    margin-top: 38px;
+}
