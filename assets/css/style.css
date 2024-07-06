@@ -449,11 +449,44 @@ a {
     overflow: hidden;
 }
 
+.member__wrapper {
+    max-width: 1170px;
+    width: 100%;
+}
+
 .member__list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-auto-columns: calc((100% / 4) - 12px);
+    grid-auto-flow: column;
     column-gap: 30px;
     margin-top: 70px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+
+.member__list::-webkit-scrollbar {
+    display: none;
+}
+
+.member__list.no-transition {
+    scroll-behavior: auto;
+}
+
+.member__list.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.member__list.dragging .member-item {
+    cursor: grab;
+    user-select: none;
+}
+
+.member-item {
+    scroll-snap-align: start;
+    flex-direction: column;
 }
 
 .member-item:hover .member-item__thumb {
