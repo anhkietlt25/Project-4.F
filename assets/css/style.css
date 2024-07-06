@@ -443,6 +443,12 @@ a {
     margin-top: 38px;
 }
 
+.member__inner {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
 .member__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -514,4 +520,45 @@ a {
 
 .member__controls-btn:hover >i {
     color: #fff;
+}
+
+/* Install */
+.install {
+    margin-top: 180px;
+}
+
+.install__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+    border-radius: 4px;
+    background: #2E80CE;
+}
+
+.install__images {
+    display: block;
+    width: 284px;
+    height: 522px;
+    margin-top: -95px;
+    object-fit: cover;
+}
+
+.install__content {
+    max-width: 586px !important;
+}
+
+.install__heading,
+.install__desc {
+    color: #fff;
+}
+
+.install__heading {
+    max-width: 489px;
+}
+
+.install__row {
+    display: flex;
+    column-gap: 28px;
+    margin-top: 38px;
 }

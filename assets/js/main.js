@@ -24,3 +24,8 @@ for( let i = 0; i < listNav.length; i++  ) {
 //         item.classList.toggle('navbar__link--active');
 //     });
 // });
+
+const PreviousBtn = document.getElementById('Previous');
+const NextBtn = document.getElementById('Next');
+// console.log(NextBtn);
+
