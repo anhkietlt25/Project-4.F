@@ -83,8 +83,8 @@ const autoPlay = () => {
     if(window.innerWidth < 800) return; // Return if window is smaller than 800
     // AutoPlay the list after every 3000ms
     timeoutId = setTimeout(() => list.scrollLeft += firstCardWidth, 3000);
+    // console.log(timeoutId);
 }
-autoPlay();
 
 const infiniteScroll = () => {
     // If the list is at the beginning, scroll to the end
