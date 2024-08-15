@@ -25,7 +25,7 @@ for( let i = 0; i < listNav.length; i++  ) {
 //     });
 // });
 
-const arrowBtn = document.querySelectorAll('.member__controls i');
+const arrowBtn = document.querySelectorAll('.control i');
 const list = document.querySelector('.member__list');
 const wrapper = document.querySelector('.member__wrapper');
 const firstCardWidth = list.querySelector('.member-item').offsetWidth;
